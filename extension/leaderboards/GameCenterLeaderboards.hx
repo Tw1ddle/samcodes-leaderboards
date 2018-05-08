@@ -1,4 +1,4 @@
-package leaderboards;
+package extension.leaderboards;
 
 #if gamecenterleaderboards
 

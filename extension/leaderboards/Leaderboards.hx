@@ -1,33 +1,33 @@
-package leaderboards;
+package extension.leaderboards;
 
 #if googleplayleaderboards
-import leaderboards.Leaderboards;
+import extension.leaderboards.Leaderboards;
 #end
 
 #if gamecircleleaderboards
-import leaderboards.GameCircleLeaderboards;
+import extension.leaderboards.GameCircleLeaderboards;
 #end
 
 #if gamecenterleaderboards
-import leaderboards.GameCenterLeaderboards;
+import extension.leaderboards.GameCenterLeaderboards;
 #end
 
 #if kongregateleaderboards
-import leaderboards.KongregateFacade;
+import extension.leaderboards.KongregateFacade;
 #end
 
 #if gamejoltleaderboards
 import flixel.util.FlxTimer; // For pinging the GameJolt session
-import leaderboards.GameJoltFacade;
+import extension.leaderboards.GameJoltFacade;
 #end
 
 #if newgroundsleaderboards
-import leaderboards.NewgroundsFacade;
+import extension.leaderboards.NewgroundsFacade;
 #end
 
 #if steamworksleaderboards
-import leaderboards.SteamworksFacade;
-import leaderboards.SteamworksFacade.DialogName;
+import extension.leaderboards.SteamworksFacade;
+import extension.leaderboards.SteamworksFacade.DialogName;
 #end
 
 class Leaderboards {

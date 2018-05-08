@@ -1,31 +1,31 @@
-package leaderboards;
+package extension.leaderboards;
 
 #if googleplayleaderboards
-import leaderboards.GooglePlayLeaderboards;
+import extension.leaderboards.GooglePlayLeaderboards;
 #end
 
 #if gamecircleleaderboards
-import leaderboards.GameCircleLeaderboards;
+import extension.leaderboards.GameCircleLeaderboards;
 #end
 
 #if gamecenterleaderboards
-import eaderboards.GameCenterLeaderboards;
+import extension.leaderboards.GameCenterLeaderboards;
 #end
 
 #if kongregateleaderboards
-import leaderboards.KongregateFacade;
+import extension.leaderboards.KongregateFacade;
 #end
 
 #if gamejoltleaderboards
-import leaderboards.GameJoltFacade;
+import extension.leaderboards.GameJoltFacade;
 #end
 
 #if newgroundsleaderboards
-import leaderboards.NewgroundsFacade;
+import extension.leaderboards.NewgroundsFacade;
 #end
 
 #if steamworksleaderboards
-import leaderboards.SteamworksFacade;
+import extension.leaderboards.SteamworksFacade;
 #end
 
 class Achievement {
