@@ -1,0 +1,12 @@
+{
+	"name": "samcodes-leaderboards",
+	"url": "http://samcodes.co.uk/code/",
+	"license": "MIT",
+	"tags": ["api","google-play-games","extension-ios","gpg","android","gamecircle","ios","games","openfl"],
+	"description": "Combined leaderboards and achievements haxelib",
+	"version": "1.0.0",
+	"releasenote": "Initial release",
+	"contributors": ["samcodes"],
+	"dependencies": {
+	}
+}
