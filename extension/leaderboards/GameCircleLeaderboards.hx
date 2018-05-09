@@ -2,8 +2,8 @@ package extension.leaderboards;
 
 #if gamecircleleaderboards
 
-import extension.gamecircle.GameCircleListener;
 import extension.gamecircle.GamesClient;
+import extension.gamecircle.GameCircleListener;
 import extension.gamecircle.GameCircle;
 import extension.gamecircle.PopUpLocation;
 
