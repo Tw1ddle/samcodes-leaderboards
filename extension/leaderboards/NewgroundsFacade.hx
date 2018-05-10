@@ -1,6 +1,6 @@
 package extension.leaderboards;
 
-#if newgrounds
+#if newgroundsleaderboards
 
 import com.newgrounds.API;
 import com.newgrounds.APIEvent;

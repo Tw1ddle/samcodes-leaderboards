@@ -2,5 +2,47 @@
 <project>
 	<classpath name="src" />
 	
-	<include path="lib/samcodes-gamecircle" />
+	<section if="googleplayleaderboards">
+		<haxelib name="samcodes-googleplaygames" />
+		<setenv name="GOOGLEPLAYLEADERBOARDS" />
+		<haxedef name="googleplayleaderboards" />
+	</section>
+	
+	<section if="gamecircleleaderboards">
+		<haxelib name="samcodes-gamecircle" />
+		<setenv name="GAMECIRCLELEADERBOARDS" />
+		<haxedef name="gamecircleleaderboards" />
+	</section>
+	
+	<section if="gamecenterleaderboards">
+		<haxelib name="gamecenter" />
+		<setenv name="GAMECENTERLEADERBOARDS" />
+		<haxedef name="gamecenterleaderboards" />
+	</section>
+	
+	<section if="kongregateleaderboards">
+		<haxelib name="flixel-addons" />
+		<setenv name="KONGREGATELEADERBOARDS" />
+		<haxedef name="kongregateleaderboards" />
+	</section>
+	
+	<section if="gamejoltleaderboards">
+		<haxelib name="flixel-addons" />
+		<setenv name="GAMEJOLTLEADERBOARDS" />
+		<haxedef name="gamejoltleaderboards" />
+	</section>
+	
+	<section if="newgroundsleaderboards">
+		<haxeflag name="-swf-lib" value="newgrounds/NewgroundsAPI.swc" />
+		<haxedef name="as3_native" />
+		<setenv name="NEWGROUNDSLEADERBOARDS" />
+		<haxedef name="newgroundsleaderboards" />
+	</section>
+	
+	<section if="steamworksleaderboards">
+		<haxelib name="steamwrap" />
+		<setenv name="STEAMWORKSLEADERBOARDS" />
+		<haxedef name="steamworksleaderboards" />
+	</section>
+	
 </project>
