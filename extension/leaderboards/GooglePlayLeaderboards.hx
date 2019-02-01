@@ -22,6 +22,10 @@ class GooglePlayLeaderboards {
 		GooglePlayGames.signIn();
 	}
 	
+	public function isSignedIn():Bool {
+		return GooglePlayGames.isSignedIn();
+	}
+	
 	public function signOut():Void {
 		GooglePlayGames.signOut();
 	}

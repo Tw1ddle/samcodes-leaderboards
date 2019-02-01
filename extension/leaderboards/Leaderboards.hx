@@ -161,8 +161,7 @@ class Leaderboards {
 		#end
 		
 		#if googleplayleaderboards
-		trace("Note, GooglePlayLeaderboards isSignedIn is unimplemented");
-		return true; // Unimplemented
+		return GooglePlayLeaderboards.get.isSignedIn();
 		#end
 		
 		#if gamecircleleaderboards
