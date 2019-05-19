@@ -13,10 +13,18 @@ class GameCenterLeaderboards {
 	}
 	
 	public function openLeaderboard(id:String):Void {
+		if (!isSignedIn()) {
+			return;
+		}
+		
 		GameCenter.showLeaderboard(id);
 	}
 	
 	public function openAchievements():Void {
+		if (!isSignedIn()) {
+			return;
+		}
+		
 		GameCenter.showAchievements();
 	}
 	
@@ -25,14 +33,26 @@ class GameCenterLeaderboards {
 	}
 	
 	public function signIn():Void {
+		if (isSignedIn()) {
+			return;
+		}
+		
 		GameCenter.authenticate();
 	}
 	
 	public function submitScore(id:String, score:Int):Void {
+		if (!isSignedIn()) {
+			return;
+		}
+		
 		GameCenter.reportScore(id, score);
 	}
 
 	public function updateAchievementProgress(id:String, percent:Float, showBanner:Bool = true):Void {
+		if (!isSignedIn()) {
+			return;
+		}
+		
 		GameCenter.reportAchievement(id, percent, showBanner);
 	}
 }
